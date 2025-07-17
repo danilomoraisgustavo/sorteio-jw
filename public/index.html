@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Sorteio de Personagens Bíblicos</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sorteio de Personagens Bíblicos</h1>
+        <input type="text" id="name" placeholder="Seu nome" required />
+        <div class="radio-group">
+            <label><input type="radio" name="gender" value="M" checked /> Homem</label>
+            <label><input type="radio" name="gender" value="F" /> Mulher</label>
+        </div>
+        <button id="drawBtn">Sortear</button>
+        <p id="result"></p>
+        <div class="grid"></div>
+        <div id="finalReveal">
+            <div class="final-card">
+                <img id="finalImg" src="" alt="" />
+                <p id="finalName"></p>
+            </div>
+        </div>
+        <hr />
+        <button id="addCharBtn">Adicionar Novo Personagem</button>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span id="closeModal" class="close">&times;</span>
+                <h2>Adicionar Personagem</h2>
+                <input type="text" id="newName" placeholder="Nome do Personagem" />
+                <div class="radio-group">
+                    <label><input type="radio" name="newGender" value="M" checked /> Homem</label>
+                    <label><input type="radio" name="newGender" value="F" /> Mulher</label>
+                </div>
+                <button id="saveCharBtn">Salvar</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
